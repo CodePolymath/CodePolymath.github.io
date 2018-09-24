@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Allow: //nicolebakescakes.com
+
+Sitemap: http://nicolebakescakes.com/sitemap.xml

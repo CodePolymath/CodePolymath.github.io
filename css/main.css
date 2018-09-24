@@ -1,0 +1,1297 @@
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    color: #5A4E3C;
+    background-color: #eaeaea;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ffffff, -1px -1px 1px #666666;
+}
+
+a {
+    color: #88755A;
+    text-decoration: none;
+}
+
+img {
+    padding: 3px;
+    border: 1px solid #402A1D;
+    background: #ffffff;
+}
+
+img.left {
+    float:left;
+    margin: 5px 20px 5px 0;
+}
+
+img.right {
+    float:right;
+    margin: 5px 0 5px 20px;
+}
+
+
+.divBusinessDesc {
+    /*position:absolute;
+    top:570px;
+    left:0px;*/
+    z-index: 1;
+    text-align: left;
+}
+
+.divBusinessDesc .divDesc {
+    margin-top: 10px;
+    font-size:1.75em;
+    text-align: center;
+    letter-spacing: .05em;
+}
+
+.divBusinessDesc .indent {
+    position: relative;
+    top:-100px;
+    left:30px;
+}
+
+header {
+    width: 100%;
+    height: 43px;
+    border: 1px solid #74462D;
+    border-width: 2px 0 2px 0;
+    position: fixed;
+    top: 8px;
+    z-index: 50;
+    text-align: left;
+    padding: 12px 10px 0 15px;
+    background-color: rgba(255, 255, 255, .75);
+    -moz-box-shadow: 0px 2px 10px #74462D;
+    -webkit-box-shadow: 0px 2px 10px #74462D;
+    box-shadow: 0px 4px 10px #74462D;
+}
+
+h1.fontface {
+    font: 60px/68px Sacramento, Arial, sans-serif;
+    color: #402A1D;
+    text-shadow: none;
+    letter-spacing: 0;
+}
+
+h1 {
+    height: 40px;
+    font-weight: 400;
+    font-size: 4em;
+    display:inline;
+    margin: 0 10px 0 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+header h1.fontface {
+    font: 60px/54px Sacramento, Arial, sans-serif;
+}
+
+header h2 {
+    text-shadow: none;
+    color: #402A1D;
+    margin-left: 0;
+}
+
+header h2 span {
+    font-size: .75em;
+    color:#5A4E3C;
+    text-shadow: -1px -1px 2px #F26EA6, 1px 1px 2px #7ECFD1;
+}
+
+h2 {
+    height: 40px;
+    font-weight: 400;
+    font-size: 2em;
+    display:inline;
+    margin-left: 20px;
+    z-index: 30;
+    position: relative;
+}
+
+h2.fontface {
+    font: 44px/46px Sacramento, Arial, sans-serif;
+    font-size: 2.25em;
+    color: #402A1D;
+    letter-spacing: 0;
+    text-shadow: -1px -1px 2px #ffffff, 1px 1px 2px #FFBFBF, -3px -8px 7px #ffffff, 3px 8px 7px #ffffff;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+
+#lnkYelp {
+    position: relative;
+    left: 28px;
+    top: 0px;
+    height: 23px;
+    width: 146px;
+    display: inline-block;
+    background-image: url(../images/yelp-sm.png);
+    background-size: 64px;
+    background-position: 80px 2px;
+    background-repeat: no-repeat;
+    overflow: visible;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: none;
+    color: #cc0000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+nav {
+    display: inline-block;
+    height: 50px;
+    float: right;
+    margin: 12px 15px 0 0;
+}
+
+nav ul {
+    padding:0;
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 1.25em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    /*text-shadow: -1px -1px 4px #5A4E3C, 1px 1px 4px #666666;*/
+    outline: none;
+}
+
+nav a:hover, nav a.current {
+    opacity:1;
+    text-shadow: none;
+    /*text-shadow: -1px -1px 1px #5A4E3C, 1px 1px 1px #666666;*/
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: opacity .3s;
+    transition: all .3s;
+}
+
+nav a.current {
+    /*background: rgba(255, 220, 220, .75);*/
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 5px #ffffff;
+    border-radius: 10px;
+}
+
+th {
+    font-size: 1.25em;
+    padding-left:20px
+}
+
+td {
+    height: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    z-index: 40;
+    padding: 3px 0;
+    text-shadow: none;
+    letter-spacing: .1em;
+}
+
+footer .spnFlex {
+    margin: 0 7px
+}
+
+#divParallaxWrap {
+    position: absolute;
+    overflow: hidden;
+}
+
+#divParallax {
+    position: absolute;
+    z-index: 20;
+}
+
+#divBgColor {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    width: 990px;
+    height: 100%;
+    background-color: #faeeee;
+    margin-left: -495px;
+    -moz-box-shadow: -6px 0 15px 5px #aaaaaa, 6px 0 15px 5px #aaaaaa;
+    -webkit-box-shadow: -6px 0 15px 5px #aaaaaa, 6px 0 15px 5px #aaaaaa;
+    box-shadow: -6px 0 15px 5px #aaaaaa, 6px 0 15px 5px #aaaaaa;
+}
+
+#divBgPattern {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../images/diagStripesLg.png) repeat;
+}
+
+#divLogo {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left:30px;
+    z-index: 20;
+    width: 350px;
+    height: 204px;
+    /*background: url(../images/bgFrameLg.png) center top no-repeat;*/
+}
+
+#divLogo img {
+    background: none;
+    border: none;
+    /*    display: none;*/
+}
+
+#divLogo h1.fontface {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    font-size: 5.5em;
+    font-weight: 500;
+}
+
+#divNote {
+    width: 300px;
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 21;
+    top: 480px;
+    left: 630px;
+    background: #ffffff;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 3px;
+}
+
+#divNoteSlider {
+    width: 1848px;
+    height: 75px;
+    position: absolute;
+    z-index: 22;
+    left: 0;
+    top: 0;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+}
+
+#divNoteSlider.pos0 {
+    left: 0px;
+}
+
+#divNoteSlider.pos1 {
+    left: -308px;
+}
+
+#divNoteSlider.pos2 {
+    left: -616px;
+}
+
+#divNoteSlider.pos3 {
+    left: -924px;
+}
+
+#divNoteSlider.pos4 {
+    left: -1232px;
+}
+
+#divNoteSlider.pos5 {
+    left: -1540px;
+}
+
+#divNoteSlider.transitionNone {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+#divNoteSlider div {
+    color: #333333;
+    position: static;
+    float:left;
+    font-size: 1.40em;
+    font-weight: 400;
+    text-align: left;
+    width: 276px;
+    padding: 11px 16px;
+}
+
+.divDefault {
+    width:970px;
+    height:800px;
+    margin:0 auto 10px auto;
+    text-align: center;
+    padding-top:80px;
+    z-index: 10;
+    position: relative;
+}
+
+.divSection {
+    width:970px;
+    height:600px;
+    margin:0 auto 120px auto;
+    text-align: left;
+    padding-top:50px;
+    z-index: 20;
+    position: relative;
+}
+
+.divServing {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h3noMargin {
+    margin: 0;
+}
+
+.divServing span {
+    margin: 0 2px;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.clear {
+    display: none;
+}
+
+#divSection2 {
+    height:740px;
+}
+
+#divSection4 {
+    height:800px;
+}
+
+#divSection5 {
+    height: 400px;
+}
+
+#divSection5 img.right{
+    width:27%;
+}
+
+.divSection.last {
+    height:600px;
+    margin:0 auto;
+}
+
+.divText {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px 40px;
+    color: #444444;
+    width: 75%;
+    margin: 15px auto;
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-shadow: none;
+    font-weight: 500;
+    background-color: rgba(255, 210, 210, .9);
+}
+
+.divText a {
+    color:#C181B8;
+}
+
+.divText h3 {
+    font-size: 1.25em;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.divText p.pCentered {
+    text-align: center;
+    padding:0 120px;
+}
+
+.divText p:first-child {
+    margin-top: 10px;
+}
+
+.divText ul.ulWide {
+    width:50%;
+}
+
+.divText ul li.liLg {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.divTextInner {
+    float:left;
+}
+
+.divTextInner.small {
+    width:20%;
+    margin-right: 20px;
+}
+
+.divTextInner.medium {
+    width:30%;
+}
+
+.divTextInner.large {
+    width:38%;
+    padding-left:30px;
+    margin-right: 20px;
+}
+
+.divTextInner ul {
+    float: left;
+    list-style: none;
+    font-size: .75em;
+    line-height: 1.5em;
+    font-weight: 300;
+    width:45%;
+    margin: 3px auto 0 0;
+    padding: 0;
+    white-space: normal;
+}
+
+.divTextHeading {
+    float:left;
+    width:100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top:4px;
+    line-height: 20px;
+}
+
+.divScript {
+    display: none;
+    height: 64px;
+    font: 90px/92px Sacramento, Arial, sans-serif;
+    color: #402A1D;
+    text-shadow: none;
+    letter-spacing: 0;
+}
+
+#divFading {
+    position: relative;
+    margin: 0 auto;
+    width: 968px;
+    height: 590px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.imgFading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+.divGallery {
+    width: 33%;
+    height: 570px;
+    float:left;
+    text-align: center;
+}
+
+.divGalleryWrap {
+    position: relative;
+    z-index: 0;
+    width:100%;
+}
+
+.divGalleryLogo {
+    width: 215px;
+    height: 90px;
+    background: url(../images/bgFrameSm.png) 28px top no-repeat;
+    margin: 0 auto;
+    padding: 70px 40px 0 37px;
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+.divGalleryFrame {
+    position: relative;
+    width: 267px;
+    height: auto;
+    margin: 0 auto;
+    padding: 3px;
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+.divGalleryNote {
+    position: absolute;
+    top: 310px;
+    left: 60px;
+    width: 150px;
+    height: 25px;
+    padding-top:3px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    opacity: 0;
+    background: #ffffff;
+    background-color: rgba(255, 255, 255, .75);
+    cursor: pointer;
+}
+
+.divGalleryImage {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 265px;
+    height: 353px;
+}
+
+.divGalleryFrame:hover .divGalleryNote {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+#divOverlay {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#divOverlay.displayBlock {
+    display: block;
+}
+
+#divGalleryFull {
+    height: 600px;
+    width: 444px;
+    top: 20px;
+    position: relative;
+    margin: 0 auto;
+    background: #ffffff;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+#divGalleryFull:hover #divGalleryPop, #divGalleryFull:hover #divGalleryPrev, #divGalleryFull:hover #divGalleryNext {
+    opacity: 1 !important;
+}
+
+#imgGalleryFull{
+    width:100%;
+}
+
+#divGalleryClose {
+    position: absolute;
+    top: -13px;
+    right: -21px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: url(../images/sprite-controls.png) -30px 0px no-repeat;
+    cursor: pointer;
+    z-index: 55;
+}
+
+#divGalleryClose:hover {
+    background-position: -30px -30px;
+}
+
+#divGalleryPop {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 29px;
+    height: 30px;
+    padding: 0;
+    background: url(../images/sprite-controls.png) 0px 0px no-repeat;
+    cursor: pointer;
+}
+
+#divGalleryPop:hover {
+    background-position: 0px -30px;
+}
+
+#divGalleryPrev {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#divGalleryPrev div {
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/sprite-controls.png) -90px 0px no-repeat;
+}
+
+#divGalleryPrev:hover div {
+    background-position: -90px -30px;
+}
+
+#divGalleryNext {
+    position: absolute;
+    right: -7px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#divGalleryNext div {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/sprite-controls.png) -60px 0px no-repeat;
+}
+
+#divGalleryNext:hover div {
+    background-position: -60px -30px;
+}
+
+#divWedding {
+    background: url(../images/weddingcakes/wedding-cake-01.jpg) left top no-repeat;
+    background-size: cover;
+}
+
+#divSpecial {
+    background: url(../images/special/special-06.jpg) -120px top no-repeat;
+    background-size: 210%;
+    background-position: 0% 88%;
+}
+
+#divTreats {
+    background: url(../images/treats/treat-03.jpg) left top no-repeat;
+    background-size: cover;
+    background-position: 0%;
+}
+
+.tdSmall {
+    font-size: .75em;
+    white-space: normal;
+    line-height: 24px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.fadeOut {
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadeOutFast {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.fadeOutIE {
+    z-index: 3;
+}
+
+@media only screen and (min-width: 320px) {
+    h2.fontface{
+        font-size: 2.25em;
+        text-align: center;
+        width: 90%;
+    }
+    nav {display: none;}
+    nav a {
+        letter-spacing: .05em;
+        font-size: 1.25em;
+    }
+    p {
+        text-align: left;
+        width: 100%;
+    }
+    header {
+
+    }
+    #divParallaxWrap {
+        display:none;
+    }
+
+    #divBgColor {
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    #divLogo {
+        width: 300px;
+        height: 174px;
+    }
+
+    #divLogo img {
+        width: 100%;
+    }
+    #lnkYelp {
+        text-shadow: 2px 2px 1px #ffffff, -2px -2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
+    }
+    #divNoteSlider div {
+        padding-top: 4px;
+        padding-right: 4px;
+        width: 288px;
+    }
+    #divNote {
+        top: 80%;
+        width: 315px;
+        right: 5%;
+        font-size: .8em;
+        height: 50px;
+    }
+
+    .divDefault {
+        width:90%;
+        height: auto;
+    }
+
+    .pHostess {
+        clear:both;
+        margin-top:50px;
+    }
+    .divHostess {
+        width:100%;
+        text-align: center;
+    }
+
+    .divHostess a img{
+        width: 100%
+    }
+    .divServing span {
+        font-size: 1.25em;
+    }
+    .pFlex {
+        text-align: center;
+    }
+    .spnFlex {
+        display: inline-block;
+        text-align: left;
+    }
+    img.left {
+        float:none;
+        margin-right: 0;
+    }
+    .divSection {
+        width:90%;
+        text-align: center;
+    }
+    .divDefault{
+        margin-top: 40px;
+    }
+
+    #divSection2 {
+        height:1850px
+    }
+
+    #divSection3 {
+        height:1600px
+    }
+
+    #divSection4 {
+        height:1028px;
+    }
+    #divSection5 {
+        height: auto;
+    }
+    #divSection5 img.right{
+         width:45%;
+    }
+
+    .divSection.last {
+        height:auto;
+        margin-bottom: 68px;
+    }
+    .divText {
+        width: 85%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .divText p.pCentered {
+        padding:0 1%;
+    }
+
+    .divText p:first-child {
+        margin-top: 10px;
+    }
+    .tblServing {
+        display:none;
+    }
+    .divTextInner {
+        text-align: left;
+        margin: 0;
+    }
+    /*.divTextInner ul li {
+        white-space: nowrap;
+    }*/
+    .divTextInner.small {
+        width: 30%;
+        margin: 0 10px 0 auto;
+    }
+    .divTextInner.medium {
+        margin: 0;
+        width: 60%;
+    }
+    .divTextInner.medium ul:last-child{
+        float:left;
+        clear: both;
+        width: 100%;
+    }
+    .divTextInner.medium ul:last-child li:last-child{
+        font-size: .8em;
+    }
+    .divTextInner.large {
+        margin: 0;
+        clear: both;
+        width: 100%;
+        padding: 0;
+    }
+    #divFading {
+        overflow: visible;
+        height: 180px;
+        width: 90%;
+    }
+    .imgFading {
+        width: 99%;
+    }
+    .divGallery {
+        width: 100%;
+    }
+
+    .divGalleryLogo {
+        width: 80%;
+        padding: 28% 10% 0 10%;
+        background-position: 36% 53%;
+    }
+
+    #divGalleryNext {
+        top: 45%;
+    }
+    #divGalleryPrev {
+        top: 45%;
+    }
+
+    #divGalleryFull{
+        background: transparent;
+    }
+    #divGalleryFull div.fadeOutFast {
+        opacity: 1;
+    }
+
+    .divBusinessDesc .divDesc{
+        font-size: 1.25em;
+    }
+    footer span {
+        display: block;
+        margin: 2px 7px;
+    }
+    footer span.spnFlex {
+        display: none;
+    }
+}
+
+/*1 Column for Narrow Browser Windows (between 0 and 679 pixels) and Smartphones in both orientations. In this query we linearize all of the columns so that they stack vertically by setting float to none and width to auto. We also use this query to move the menu to the top of the layout and stack its links neatly in a vertical orientation. */
+
+@media only screen and (min-width: 321px) and (max-width: 679px) {
+
+}
+
+@media only screen and (min-width: 680px) and (max-width: 870px) {
+    header a:first-child {
+        display:block;
+    }
+    nav {
+        width: 100%;
+        float:none;
+    }
+    nav a {
+        text-shadow: none;
+        opacity: 1;
+        font-size: 1.15em;
+        padding-right:10px;
+        margin-top:5px;
+    }
+    nav a.current {
+        /*text-shadow: 1px 1px 1px #000000, -1px -1px 1px #ffffff;*/
+        font-weight: bold;
+    }
+    nav ul li {
+        margin-right: 2%;
+    }
+    #divSection1 {
+        padding-top:120px;
+    }
+    #divLogo {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 871px) and (max-width: 972px) {
+
+    #divNote {
+        float:right;
+        position: relative;
+        top: 63%;
+        right: 3%;
+        left: auto;
+        /*top: 64%;*/
+    }
+
+    #divSection4 {
+        height: auto;
+    }
+    .divSection.last {
+        height: 500px;
+    }
+    .divGallery {
+        height: auto;
+    }
+    .divGalleryImage {
+        width: 100%;
+        background-size: cover;
+    }
+    .nav a {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 972px) {
+    #divLogo {
+        display: block;
+    }
+}
+
+/*Exception rules for Smartphones in Landscape orientation only. When a smartphone is turned sideways, the text will appear larger so this query contains a single rule that reduces the font-size.*/
+@media only screen and (max-device-width: 480px) and (orientation : landscape) {
+
+}
+
+/*2 Column with top spanning menu for Medium Browser Windows and Portrait Tablets. In this query we move the navigation to the top and stack the links. The sidebar and main content areas remain as columns. The interior 3-column structure inside the main content column is reflowed so that the third column drops below the first 2 and spans their width.*/
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : portrait) {
+
+}
+
+/*Portrait Tablet Exceptions to adjust padding in content areas. In this query we include a simple exception rule to adjust the padding in all content areas to a value less than the default.*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+/*Additional Rules for Medium Desktop Browser Windows and Landscape Tablets to reflow the inner 3-column structure. When a tablet is turned sideways there is ample room to display the menu as a column so all we want to do here is reflow the inner 3-column structure that is inside the main content column so that the third column drops below the first 2 and spans full width. This query also creates a breakpoint for desktop browsers when the window is between 680 and 979 pixels.*/
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : landscape) {
+
+}
+
+/*Landscape Tablet Exceptions to adjust padding and reduce font size. When a tablet is turned sideways, the text will appear larger so this query contains rules that reduces the font-size and padding.*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+/*3 Column for Medium-Wide Browser Windows. This query sets a breakpoint for medium wide windows (between 980 and 1420 pixels) and reflows the inner 3-column structure inside the main content column to drop the third column below the first 2.*/
+@media only screen and (min-width: 980px) and (max-width: 1420px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+
+
+}
+
+.divConfetti {
+    position: relative;
+    z-index: 25;
+    height: 70px;
+    width: 70px;
+    background: url(../images/sprite-confetti.png) center 0px no-repeat;
+}
+
+@keyframes animationFramesA{
+  0% {
+    opacity:1;
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    transform:  rotate(359deg) ;
+  }
+}
+
+@-moz-keyframes animationFramesA{
+  0% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  rotate(359deg) ;
+  }
+}
+
+@-webkit-keyframes animationFramesA {
+  0% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  rotate(359deg) ;
+  }
+}
+
+@-o-keyframes animationFramesA {
+  0% {
+    opacity:1;
+    -o-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  rotate(359deg) ;
+  }
+}
+
+@-ms-keyframes animationFramesA {
+  0% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  rotate(359deg) ;
+  }
+}
+
+@keyframes animationFramesB{
+  0% {
+    opacity:1;
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    transform:  rotate(-359deg) ;
+  }
+}
+
+@-moz-keyframes animationFramesB{
+  0% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  rotate(-359deg) ;
+  }
+}
+
+@-webkit-keyframes animationFramesB {
+  0% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  rotate(-359deg) ;
+  }
+}
+
+@-o-keyframes animationFramesB {
+  0% {
+    opacity:1;
+    -o-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  rotate(-359deg) ;
+  }
+}
+
+@-ms-keyframes animationFramesB {
+  0% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  rotate(-359deg) ;
+  }
+}
+
+@-moz-keyframes animationFramesC{
+  0% {-moz-transform: rotate(0deg);}
+50% {-moz-transform: rotate(-360deg);}
+100% {-moz-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes animationFramesC {
+  0% {-webkit-transform: rotate(0deg);}
+50% {-webkit-transform: rotate(-360deg);}
+100% {-webkit-transform: rotate(0deg);}
+}
+
+@-o-keyframes animationFramesC {
+  0% {-o-transform: rotate(0deg);}
+50% {-o-transform: rotate(-360deg);}
+100% {-o-transform: rotate(0deg);}
+}
+
+@-ms-keyframes animationFramesC {
+  0% {-ms-transform: rotate(0deg);}
+50% {-ms-transform: rotate(-360deg);}
+100% {-ms-transform: rotate(0deg);}
+}
+
+@-moz-keyframes animationFramesD{
+  0% {-moz-transform: rotate(0deg);}
+50% {-moz-transform: rotate(360deg);}
+100% {-moz-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes animationFramesD {
+0% {-webkit-transform: rotate(0deg);}
+50% {-webkit-transform: rotate(360deg);}
+100% {-webkit-transform: rotate(0deg);}
+}
+
+@-o-keyframes animationFramesD {
+  0% {-o-transform: rotate(0deg);}
+50% {-o-transform: rotate(360deg);}
+100% {-o-transform: rotate(0deg);}
+  }
+}
+
+@-ms-keyframes animationFramesD {
+  0% {-ms-transform: rotate(0deg);}
+50% {-ms-transform: rotate(360deg);}
+100% {-ms-transform: rotate(0deg);}
+}
+
+.divConfetti.spin1{
+    animation: animationFramesA linear 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFramesA linear 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFramesA linear 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFramesA linear 10s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFramesA linear 10s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+
+}
+
+.divConfetti.spin2{
+animation: animationFramesB linear 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFramesB linear 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFramesB linear 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFramesB linear 10s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFramesB linear 10s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+
+}
+
+.divConfetti.spin3{
+-webkit-animation: animationFramesC 6s infinite ease-in-out alternate;
+-moz-animation: animationFramesC 6s infinite ease-in-out alternate;
+-o-animation: animationFramesC 6s infinite ease-in-out alternate;
+}
+
+.divConfetti.spin4{
+-webkit-animation: animationFramesD 6s infinite ease-in-out alternate;
+-moz-animation: animationFramesD 6s infinite ease-in-out alternate;
+-o-animation: animationFramesD 6s infinite ease-in-out alternate;
+}
+
+.sprite0 {
+    height: 58px;
+    background-position: 0px 0px;
+}
+
+.sprite1 {
+    height: 50px;
+    background-position: 0px -58px;
+}
+
+.sprite2 {
+    height: 100px;
+    background-position: 0px -111px;
+}
+
+.sprite3 {
+    height: 85px;
+    background-position: 0px -211px;
+}
+
+.sprite4 {
+    height: 46px;
+    background-position: 0px -296px;
+}
+
+.sprite5 {
+    height: 46px;
+    background-position: 0px -346px;
+}
