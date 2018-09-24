@@ -113,15 +113,12 @@
     <div class="divSection" id="divSection2">
         <h2 class="fontface">Welcome to Nicole Bakes Cakes!</h2>
         <div class="divText">
-            <p><?php include("text/about-1.txt"); ?>
-            </p>
+            <p>Chef Nicole is a professional pastry chef based in Southern California with over 10 years of experience in cakes, cupcakes and many other sweet treats. She loves making people happy with the cakes she makes: Nicole's goal is to make all of your events (weddings, showers, birthday parties, etc) unforgettable and unique!</p>
             <p class="pFlex">
                 <img src="images/pink-buttercream-cake.jpg" class="left" width="200" height="259" alt="Pink buttercream frosted cake">
             </p>
-            <span class="spnFlex"><?php include("text/about-2.txt"); ?></span>
-            <p>
-            <?php include("text/about-3.txt"); ?>
-            </p>
+            <span class="spnFlex">Chef Nicole only uses the highest quality ingredients, and can bake around just about any special dietary or allergic needs. She applies lots of care and love to every creation and uses her incredible attention for detail to bring your cake dreams to reality!</span>
+            <p>Make your next special event memorable with a unique, rich and sweet creation (or creations!) with Chef Nicole.</p>
             <p class="pHostess">
                 <span>Chef Nicole's work was recently featured on a popular event planning blog,</span>
                 <a href="http://blog.hwtm.com/2014/02/monsters-university-1st-birthday-extravaganza/" target="_blank">&quot;Hostess with the Mostest.&quot;</a>
@@ -200,20 +197,20 @@
             <tbody>
             <tr>
                 <td>Buttercream</td>
-                <td><?php include("text/cake-buttercream-price.txt"); ?> per slice*</td>
-                <td><?php include("text/cupcake-buttercream-price.txt"); ?> each</td>
-                <td rowspan="2"><?php include("text/cake-pop-price.txt"); ?> each</td>
+                <td>$5 per slice*</td>
+                <td>$3 each</td>
+                <td rowspan="2">$2.50 each</td>
             </tr>
             <tr>
                 <td>Fondant</td>
-                <td><?php include("text/cake-fondant-price.txt"); ?> per slice*</td>
-                <td><?php include("text/cupcake-fondant-price.txt"); ?> each</td>
+                <td>$6 per slice*</td>
+                <td>$3.50 each</td>
                 <td></td>
             </tr>
             <tr>
                 <td>Notes</td>
                 <td class="tdSmall">*Pricing may vary depending on the details of your cake</td>
-                <td class="tdSmall" style="padding-left:20px;">Mini Cupcakes:<br/><?php include("text/mini-cupcake-price.txt"); ?> each</td>
+                <td class="tdSmall" style="padding-left:20px;">Mini Cupcakes:<br/>$1.50 each</td>
                 <td class="tdSmall">Cake Pops are dipped in white, dark or colorful chocolate</td>
             </tr>
             </tbody>
@@ -277,7 +274,7 @@
         <div class="divText">
         <p>
             <img src="images/special/special-03.jpg" class="right" style="zoom: .475;" alt="Mommy and me baking classes">
-            <?php include("text/mommy-and-me.txt"); ?>
+            Learn to bake and frost cupcakes or cookies with your little one! Spend an afternoon learning the basics of baking, frosting and presenting your favorite cakes and pastry creations with your children or youth activity group.<br/><br/>Both group and one-on-one classes are available to book with Chef Nicole. More advanced techniques and classes are available for ambitious kids and moms, <a href="#divSection6" class="smoothScroll">Contact Nicole</a> for more info.
            </p>
         </div>
     </div>
@@ -287,10 +284,11 @@
         <p>
             <img src="images/ChefNicole.jpg" class="right" style="zoom: .275;" alt="Mommy and me baking classes">
             <div style="float:left; width: 50%;">
-                <?php include("text/contact.txt"); ?>
+                Chef Nicole is ready to help make your wedding, bridal shower or other special occasion more memorable with a delicious custom creation. She serves many areas in Southern California, including Los Angeles metro and Long Beach.
+
             </div>
             <div style="float:left; width: 50%; margin-top: 40px;">
-                Feel free to <a href="<?php include("text/email.txt"); ?>">email Nicole</a> to discuss your unique needs!
+                Feel free to <a href="mailto:nicole@nicolebakescakes.com">email Nicole</a> to discuss your unique needs!
             </div>
         </p>
         <p>
@@ -312,25 +310,10 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <!-- smoothscroll library for page scrolling on # links -->
     <!--[if gte IE 9]><script type="text/javascript" src="scripts/smoothscroll.js"></script><![endif]-->
-    <!-- use php to write three JavaScript variables with number of images in each folder type -->
     <script type="text/javascript">
-    <?php
-        $directory = "images/weddingcakes/";
-        if (glob($directory . "*.jpg") != false){
-        $filecount = count(glob($directory . "*.jpg"));
-        echo "app.weddingCount = " . $filecount . ";\n";
-        }
-        $directory = "images/special/";
-        if (glob($directory . "*.jpg") != false){
-        $filecount = count(glob($directory . "*.jpg"));
-        echo "app.specialCount = " . $filecount . ";\n";
-        }
-        $directory = "images/treats/";
-        if (glob($directory . "*.jpg") != false){
-        $filecount = count(glob($directory . "*.jpg"));
-        echo "app.treatCount = " . $filecount . ";\n";
-        }
-    ?>
+    app.weddingCount = 15;
+    app.specialCount = 13;
+    app.treatCount = 18;
     var qs = (function(a) {
     if (a == '') return {};
         var b = {};
