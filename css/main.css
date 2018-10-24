@@ -339,7 +339,7 @@ footer .spnFlex {
     font-weight: 400;
     text-align: left;
     width: 276px;
-    padding: 11px 16px;
+    padding: 16px 16px 0px 16px;
 }
 
 .divDefault {
@@ -553,8 +553,8 @@ footer .spnFlex {
     top: 310px;
     left: 60px;
     width: 150px;
-    height: 25px;
-    padding-top:3px;
+    height: 23px;
+    padding-top:8px;
     font-size: 1.2em;
     border-radius: 3px;
     opacity: 0;
