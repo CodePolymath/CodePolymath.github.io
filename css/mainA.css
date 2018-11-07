@@ -523,8 +523,8 @@ footer {
 .divGalleryNote {
 	position: absolute;
 	top: 310px;
-	left: 60px;
-	width: 150px;
+	left: 30%;
+	width: 100px;
 	height: 23px;
 	padding-top: 8px;
 	font-size: 1.2em;
